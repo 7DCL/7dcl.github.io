@@ -6,7 +6,7 @@
 <title>DCL Inteligencia a Medida</title>
 <meta name="description" content="Enrico, el asistente con IA de DCL, atiende a los clientes de pymes y de empresas de servicios petroleros e industriales las 24 horas y le deja al equipo los contactos ordenados.">
 <meta property="og:title" content="DCL Inteligencia a Medida">
-<meta property="og:description" content="Asistentes con IA a medida para pymes: atención las 24 horas, contactos ordenados y herramientas de gestión.">
+<meta property="og:description" content="IA aplicada a empresas: asistentes que atienden las 24 horas, contactos ordenados y herramientas de gestión.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='44' fill='%238a5a2b'/%3E%3Cg fill='none' stroke='%23f3e2cc' stroke-linecap='round' stroke-width='9'%3E%3Cpath d='M100 52A48 48 0 1 1 52.5 107'/%3E%3Cpath d='M100 74A26 26 0 1 1 74.3 104'/%3E%3C/g%3E%3Ccircle cx='100' cy='100' r='9' fill='%23f3e2cc'/%3E%3Ccircle cx='52.5' cy='107' r='10' fill='%23e3a35d'/%3E%3C/svg%3E">
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -286,7 +286,7 @@ footer .copymini:hover{background:rgba(255,255,255,.24)}
       <div>
         <div class="elegi">Elegí tu demo:</div>
         <div class="modo" role="group" aria-label="Elegí el tipo de empresa para la demostración"><button type="button" id="m-pyme" aria-pressed="true">Pyme</button><button type="button" id="m-og" aria-pressed="false">Oil &amp; Gas</button></div>
-        <div class="rub" id="rub" role="group" aria-label="Rubro de la pyme para la demostración"><button type="button" data-r="carp" aria-pressed="true">Carpintería</button><button type="button" data-r="inm" aria-pressed="false">Inmobiliaria</button><button type="button" data-r="taller" aria-pressed="false">Taller mecánico</button></div>
+        <div class="rub" id="rub" role="group" aria-label="Rubro de la pyme para la demostración"><button type="button" data-r="carp" aria-pressed="true">Carpintería</button><button type="button" data-r="inm" aria-pressed="false">Inmobiliaria</button><button type="button" data-r="taller" aria-pressed="false">Taller mecánico</button><button type="button" data-r="salud" aria-pressed="false">Consultorio</button><button type="button" data-r="corralon" aria-pressed="false">Corralón</button><button type="button" data-r="contable" aria-pressed="false">Estudio contable</button></div>
         <div class="phone" role="region" aria-label="Demo del chat de Enrico">
           <div class="sb" aria-hidden="true"><span>9:41</span><i>▂▄▆ ▮</i></div>
           <div class="top"><div class="av">E</div><div><b>Enrico</b><span id="demoSub">Ejemplo con una carpintería</span></div><button type="button" class="reset" id="resetBtn">Reiniciar</button></div>
@@ -444,7 +444,7 @@ footer .copymini:hover{background:rgba(255,255,255,.24)}
 <section>
   <div class="wrap">
     <div class="eyebrow">Por qué DCL</div>
-    <h2>Inteligencia hecha a medida, para cada empresa</h2>
+    <h2>Inteligencia hecha a mano, para cada empresa</h2>
     <div class="why">
       <div><b>Tus datos quedan en tu empresa</b><span>Los contactos y los documentos se guardan en un equipo tuyo o en un servidor privado, nunca en servicios de terceros, con copia de seguridad diaria.</span></div>
       <div><b>Sin pago por mensaje</b><span>Atender 30 o 3.000 consultas cuesta lo mismo. No hay licencias mensuales de software.</span></div>
@@ -521,7 +521,7 @@ footer .copymini:hover{background:rgba(255,255,255,.24)}
 
 <footer>
   <div class="wrap">
-    <span><b>DCL Inteligencia a Medida</b> · Asistentes con IA a medida para pymes y servicios petroleros</span>
+    <span><b>DCL</b> · IA aplicada a empresas: pymes y servicios petroleros</span>
     <span><a class="flink" href="https://wa.me/5492995464413" target="_blank" rel="noopener">WhatsApp: +54 9 299 546-4413</a> · Mail: <span id="mailTxt">7coceresd@gmail.com</span> <button type="button" class="copymini" id="copyMail">Copiar</button></span>
   </div>
 </footer>
@@ -561,6 +561,21 @@ footer .copymini:hover{background:rgba(255,255,255,.24)}
       q2:'¿Qué marca y modelo es?',ph2:'Marca y modelo',
       q3:'¿Qué día te queda cómodo para traerlo?',ph3:'Por ejemplo, el jueves a la mañana',
       end:'¡Listo! El taller te va a escribir a la brevedad por WhatsApp.'},
+    salud:{sub:'Ejemplo con un consultorio',hi:'¡Hola! Soy Enrico, el asistente de un consultorio. ¿En qué podemos ayudarte?',chips:['Pedir un turno','Obras sociales','Horarios y dirección','Otra consulta'],
+      a1:'Gracias. El equipo te confirma el turno y las coberturas. ¿Me dejás tu nombre y tu WhatsApp así te escriben?',ph1:'Por ejemplo, Laura, 299 154 123456',
+      q2:'¿Qué obra social o prepaga tenés? (si no tenés o preferís no decirlo, no pasa nada)',ph2:'Obra social o particular',
+      q3:'¿Qué días y horarios te quedan cómodos?',ph3:'Por ejemplo, martes a la tarde',
+      end:'¡Listo! El consultorio te va a escribir a la brevedad por WhatsApp.'},
+    corralon:{sub:'Ejemplo con un corralón o ferretería',hi:'¡Hola! Soy Enrico, el asistente de un corralón. ¿Qué materiales necesitás?',chips:['Materiales para obra','Herramientas','Pedido con envío','Presupuesto'],
+      a1:'Gracias. Los precios y el stock los confirma el equipo comercial. ¿Me dejás tu nombre y tu WhatsApp así te escriben?',ph1:'Por ejemplo, Raúl, 299 154 123456',
+      q2:'¿Qué materiales o cantidades necesitás, más o menos?',ph2:'Por ejemplo, 50 bolsas de cemento',
+      q3:'¿Lo retirás o necesitás envío? ¿A qué barrio?',ph3:'Retiro o barrio de entrega',
+      end:'¡Listo! El equipo comercial te va a escribir a la brevedad por WhatsApp.'},
+    contable:{sub:'Ejemplo con un estudio contable',hi:'¡Hola! Soy Enrico, el asistente de un estudio contable. ¿En qué podemos ayudarte?',chips:['Monotributo','Sociedades','Impuestos','Trámites','Otra consulta'],
+      a1:'Gracias. Un profesional del estudio te responde con los detalles. ¿Me dejás tu nombre y tu WhatsApp así te escriben?',ph1:'Por ejemplo, Sofía, 299 154 123456',
+      q2:'¿Sos monotributista, tenés una empresa o todavía no tenés actividad?',ph2:'Tu situación actual',
+      q3:'¿Para cuándo necesitás resolverlo, más o menos?',ph3:'Por ejemplo, este mes',
+      end:'¡Listo! Un profesional del estudio te va a escribir a la brevedad por WhatsApp.'},
     og:{sub:'Ejemplo con una empresa de servicios de campo',hi:'Hola, soy Enrico. Contamos con unidades móviles para pruebas hidráulicas, torqueo y limpieza industrial. ¿En qué servicio podemos ayudarlo?',chips:['Prueba hidráulica','Montaje y torqueo','Limpieza industrial','Mantenimiento','Transporte y logística'],
       a1:'Gracias. Los detalles técnicos y la cotización los define el área comercial. ¿Me indica su nombre y la empresa para la que trabaja?',ph1:'Por ejemplo, Marcos Díaz, Operadora X',
       q2:'¿En qué yacimiento o locación se haría el trabajo? Si todavía no lo sabe, puede omitirlo.',ph2:'Yacimiento, locación o "no lo sé"',
