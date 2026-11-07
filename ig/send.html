@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>send</title><body>enviando…<script>
+(async()=>{const q=new URLSearchParams(location.search);const fs=(q.get('f')||'').split(',').filter(Boolean);const out=[];
+for(const f of fs){if(!/^[\w\-\/\.]+$/.test(f))continue;const b=await (await fetch('/ig/'+f)).blob();out.push(new File([b],f.split('/').pop(),{type:b.type}));}
+const to=q.get('to');if(window.opener&&/^https:\/\/(www\.linkedin\.com|business\.google\.com|app\.metricool\.com)$/.test(to)){window.opener.postMessage({dclFiles:out},to);document.body.textContent='ok '+out.length;setTimeout(()=>window.close(),1500);}else document.body.textContent='sin opener';})();
+</script>
